@@ -17,13 +17,13 @@ const CMS = () => (
             base_url: 'http://localhost:3000', // the root address of your site
             auth_endpoint: 'api/authorize', // where your auth endpoint is located
               },
-              media_folder: 'public/images',
+              media_folder: '/public/images',
               public_folder: '/images',
               collections: [
                 {
                   name: 'page',
                   label: 'Page',
-                  folder: 'content/pages',
+                  folder: '/content/pages',
                   create: true,
                   slug: '{{title}}',
                   extension: 'mdx',
